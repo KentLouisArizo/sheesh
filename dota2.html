@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dota 2 Heroes</title>
+  <link rel="stylesheet" href="dota2.css" />
+</head>
+<body>
+  <a href="index.html" class="back-to-home">Back to Homepage</a>
+  <h1>Fetch and Display Dota 2 Heroes</h1>
+  <div class="filter-container">
+    <select id="primaryAttrFilter">
+      <option value="">Primary Attribute</option>
+      <option value="str">Strength</option>
+      <option value="agi">Agility</option>
+      <option value="int">Intelligence</option>
+    </select>
+    <select id="attackTypeFilter">
+      <option value="">Attack Type</option>
+      <option value="Melee">Melee</option>
+      <option value="Ranged">Ranged</option>
+    </select>
+    <select id="roleFilter">
+      <option value="">Role</option>
+    </select>
+    <input type="text" id="searchInput" placeholder="Search heroes..." aria-label="Search heroes" />
+  </div>
+  <button id="fetchHeroesBtn">Fetch Heroes</button>
+  <div id="loadingMessage" class="loading-message" style="display: none;">Loading...</div>
+  <div id="heroContainer"></div>
+  <script src="dota2.js"></script>
+</body>
+</html>
